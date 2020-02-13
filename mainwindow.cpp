@@ -15,7 +15,7 @@ public:
     }
 
     void RepresentCircle(const Coordinates& center, unsigned int radius) override {
-        painter.drawEllipse(center.first, center.second, radius, radius);
+        painter.drawEllipse(center.first - radius, center.second - radius, 2*radius, 2*radius);
     }
 
     void RepresentRectangle(const Coordinates &left_top,
