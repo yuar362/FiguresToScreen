@@ -3,8 +3,6 @@
 
 #include <QMainWindow>
 #include <QPainter>
-#include <vector>
-#include "figures.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,7 +18,6 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    std::vector<std::unique_ptr<IFigure>> figures;
     void paintEvent(QPaintEvent* paint_event);
     void mousePressEvent(QMouseEvent* mouse_event);
 };
